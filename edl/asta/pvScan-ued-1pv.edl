@@ -1,0 +1,1884 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 32
+y 51
+w 778
+h 840
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-12.0"
+btnFont "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+showGrid
+snapToGrid
+gridSize 4
+disableScroll
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 392
+y 712
+w 376
+h 108
+lineColor index 13
+fill
+fillColor index 1
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 616
+y 8
+w 156
+h 68
+lineColor index 13
+fill
+fillColor index 1
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 8
+y 712
+w 376
+h 108
+lineColor index 13
+fillColor index 1
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 8
+y 428
+w 392
+h 100
+lineColor index 13
+fillColor index 1
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 8
+y 100
+w 764
+h 296
+lineColor index 13
+fillColor index 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 36
+y 232
+w 60
+h 20
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Start [egu]:"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 104
+y 232
+w 72
+h 20
+controlPv "$(P):SCANPV1:START"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+editable
+motifWidget
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 24
+y 92
+w 120
+h 16
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 2
+value {
+  "Scan Parameters"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 36
+y 256
+w 60
+h 20
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Stop [egu]:"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 104
+y 256
+w 72
+h 20
+controlPv "$(P):SCANPV1:STOP"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+editable
+motifWidget
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 36
+y 304
+w 60
+h 20
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Inc [egu]:"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 104
+y 304
+w 72
+h 20
+controlPv "$(P):SCANPV1:INC"
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 14
+useDisplayBg
+limitsFromDb
+nullColor index 13
+smartRefresh
+changeValOnLoseFocus
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 84
+y 604
+w 596
+h 28
+controlPv "$(P):MSG"
+font "helvetica-bold-r-18.0"
+fgColor index 15
+fgAlarm
+bgColor index 14
+limitsFromDb
+nullColor index 13
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 84
+y 552
+w 120
+h 32
+fgColor index 29
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 14
+font "helvetica-bold-r-18.0"
+buttonLabel "Start Scan"
+numCmds 1
+command {
+  0 "`caget -t -S $(P):SCRIPT` $(P)"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 36
+y 200
+w 44
+h 20
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Value:"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 20
+y 732
+w 104
+h 16
+font "helvetica-bold-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Laser Shutter 1:"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 20
+y 760
+w 104
+h 16
+font "helvetica-bold-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Laser Shutter 2:"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 20
+y 788
+w 104
+h 16
+font "helvetica-bold-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Laser Shutter 3:"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 268
+y 444
+w 120
+h 28
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-medium-r-12.0"
+buttonLabel "View last data file"
+numCmds 1
+command {
+  0 "gedit `caget -t -S $(P):DATA:FILENAME`"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 24
+y 420
+w 88
+h 16
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 2
+value {
+  "Data Logger"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 16
+y 604
+w 60
+h 28
+font "helvetica-bold-r-18.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 1
+useDisplayBg
+value {
+  "Status:"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 128
+y 452
+w 120
+h 20
+
+beginGroup
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 196
+y 453
+w 52
+h 21
+controlPv "$(P):DATA:INT"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+editable
+motifWidget
+limitsFromDb
+nullColor index 13
+smartRefresh
+changeValOnLoseFocus
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 128
+y 453
+w 64
+h 21
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Interval [s]:"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 20
+y 448
+w 92
+h 24
+fgColor index 13
+bgColor index 2
+inconsistentColor index 3
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):DATA:ENABLE"
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 24
+y 704
+w 84
+h 16
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 2
+value {
+  "Readbacks"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 224
+y 552
+w 120
+h 32
+fgColor index 20
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 14
+font "helvetica-bold-r-18.0"
+buttonLabel "Abort"
+numCmds 1
+command {
+  0 "`caget -t -S $(P):SCRIPT:ABORT` $(P)"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 36
+y 280
+w 60
+h 20
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "N steps:"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 104
+y 280
+w 72
+h 20
+controlPv "$(P):SCANPV1:NSTEPS"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+editable
+motifWidget
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 400
+y 720
+w 116
+h 24
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-medium-r-12.0"
+buttonLabel "Andor Camera"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "andor-asta.edl"
+}
+symbols {
+  0 "P=ANDOR1:,R=cam1:,IOC=sioc-asta-ada01,PDU=ACSW:AS01:NW03,OUTLET=6,IOCSERVER=ar-asta06"
+}
+replaceSymbols {
+  0 1
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 632
+y 20
+w 128
+h 20
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-10.0"
+buttonLabel "IOC Control"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "procServCtrl.edl"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 632
+y 48
+w 128
+h 20
+controlPv "$(P):IOC"
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 15
+bgColor index 14
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 104
+y 20
+w 296
+h 24
+controlPv "$(P):IOC.DESC"
+font "helvetica-medium-r-14.0"
+fgColor index 13
+bgColor index 3
+editable
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 16
+y 20
+w 80
+h 24
+font "helvetica-bold-r-14.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Exp. name:"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 524
+y 720
+w 116
+h 24
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-medium-r-12.0"
+buttonLabel "Laser Shutters"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "laserShutters-asta.edl"
+}
+replaceSymbols {
+  0 1
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 12
+y 52
+w 84
+h 20
+font "helvetica-bold-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 1
+useDisplayBg
+value {
+  "Current Time:"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 108
+y 52
+w 188
+h 20
+controlPv "$(P):TIME"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 408
+y 428
+w 360
+h 100
+lineColor index 13
+fillColor index 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 424
+y 420
+w 88
+h 16
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 2
+value {
+  "Grab images"
+}
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 420
+y 448
+w 92
+h 24
+fgColor index 13
+bgColor index 2
+inconsistentColor index 3
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):GRABIMAGES:ENABLE"
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 592
+y 452
+w 52
+h 20
+controlPv "$(P):GRABIMAGES:N"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+editable
+motifWidget
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 524
+y 452
+w 64
+h 20
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "N images:"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 452
+y 564
+w 60
+h 20
+controlPv "$(P):PID"
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 15
+bgColor index 14
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 404
+y 564
+w 40
+h 20
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "PID:"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 84
+y 668
+w 596
+h 20
+controlPv "$(P):DATA:FILEPATH"
+font "helvetica-medium-r-12.0"
+fgColor index 15
+bgColor index 14
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 16
+y 648
+w 60
+h 20
+font "helvetica-bold-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Filepath:"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 540
+y 560
+w 140
+h 28
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-medium-r-12.0"
+buttonLabel "View last log file"
+numCmds 1
+command {
+  0 "gedit `caget -t -S $(P):LOG:FILENAME`"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 656
+y 444
+w 100
+h 28
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-medium-r-12.0"
+buttonLabel "Browse images"
+numCmds 1
+command {
+  0 "nautilus --browser --no-desktop `caget -t -S $(P):DATA:FILEPATH`images/"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 88
+y 172
+w 216
+h 20
+controlPv "$(P):SCANPV1:DESC"
+font "helvetica-bold-r-12.0"
+fgColor index 13
+bgColor index 3
+editable
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 28
+y 328
+w 68
+h 20
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Offset [egu]:"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 104
+y 328
+w 72
+h 20
+controlPv "$(P):SCANPV1:OFFSET"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+editable
+motifWidget
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 16
+y 352
+w 80
+h 20
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Settle time [s]:"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 104
+y 352
+w 72
+h 20
+controlPv "$(P):SCANPV1:SETTLETIME"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+editable
+motifWidget
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 88
+y 120
+w 292
+h 20
+controlPv "$(P):SCANPV1:PVNAME"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 3
+editable
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 88
+y 144
+w 292
+h 20
+controlPv "$(P):SCANPV1:PVNAME:LINK.DOL"
+font "helvetica-medium-r-12.0"
+fgColor index 15
+bgColor index 14
+limitsFromDb
+nullColor index 13
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 88
+y 200
+w 88
+h 20
+controlPv "$(P):SCANPV1:VAL"
+font "helvetica-medium-r-12.0"
+fgColor index 15
+bgColor index 14
+limitsFromDb
+nullColor index 13
+smartRefresh
+fastUpdate
+useHexPrefix
+showUnits
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 12
+y 172
+w 68
+h 20
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Description:"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 16
+y 120
+w 64
+h 20
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Scan PV:"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 20
+y 144
+w 60
+h 20
+fgColor index 27
+bgColor index 0
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-10.0"
+buttonLabel "Connect"
+numCmds 1
+command {
+  0 "caput $(P):SCANPV1:PVNAME:LINK.DOL `caget -t $(P):SCANPV1:PVNAME` CP MS"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 388
+y 120
+w 208
+h 20
+font "helvetica-bold-r-12.0"
+fgColor index 27
+bgColor index 2
+useDisplayBg
+value {
+  "Enter PV here and click 'Connect'"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 388
+y 172
+w 196
+h 20
+font "helvetica-bold-r-12.0"
+fgColor index 27
+bgColor index 2
+useDisplayBg
+value {
+  "Enter PV description here"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 132
+y 728
+w 64
+h 20
+controlPv "ASTA:LSC01:STATUS:OC"
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 15
+fgAlarm
+bgColor index 14
+bgAlarm
+limitsFromDb
+nullColor index 13
+smartRefresh
+changeValOnLoseFocus
+fastUpdate
+useHexPrefix
+useAlarmBorder
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 132
+y 756
+w 64
+h 20
+controlPv "ASTA:LSC02:STATUS:OC"
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 15
+fgAlarm
+bgColor index 14
+bgAlarm
+limitsFromDb
+nullColor index 13
+smartRefresh
+changeValOnLoseFocus
+fastUpdate
+useHexPrefix
+useAlarmBorder
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 132
+y 784
+w 64
+h 20
+controlPv "ASTA:LSC03:STATUS:OC"
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 15
+fgAlarm
+bgColor index 14
+bgAlarm
+limitsFromDb
+nullColor index 13
+smartRefresh
+changeValOnLoseFocus
+fastUpdate
+useHexPrefix
+useAlarmBorder
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 256
+y 728
+w 44
+h 20
+controlPv "ADC:AS01:13:V"
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 15
+fgAlarm
+bgColor index 14
+bgAlarm
+precision 1
+nullColor index 13
+smartRefresh
+changeValOnLoseFocus
+fastUpdate
+useHexPrefix
+useAlarmBorder
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 212
+y 728
+w 36
+h 20
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "RBV:"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 256
+y 756
+w 44
+h 20
+controlPv "ADC:AS01:14:V"
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 15
+fgAlarm
+bgColor index 14
+bgAlarm
+precision 1
+nullColor index 13
+smartRefresh
+changeValOnLoseFocus
+fastUpdate
+useHexPrefix
+useAlarmBorder
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 212
+y 756
+w 36
+h 20
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "RBV:"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 256
+y 784
+w 44
+h 20
+controlPv "ADC:AS01:15:V"
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 15
+fgAlarm
+bgColor index 14
+bgAlarm
+precision 1
+nullColor index 13
+smartRefresh
+changeValOnLoseFocus
+fastUpdate
+useHexPrefix
+useAlarmBorder
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 212
+y 784
+w 36
+h 20
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "RBV:"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 188
+y 232
+w 72
+h 20
+controlPv "$(P):SCANPV1:START"
+font "helvetica-medium-r-12.0"
+fgColor index 15
+bgColor index 14
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 188
+y 256
+w 72
+h 20
+controlPv "$(P):SCANPV1:STOP"
+font "helvetica-medium-r-12.0"
+fgColor index 15
+bgColor index 14
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 188
+y 304
+w 72
+h 20
+controlPv "$(P):SCANPV1:INC"
+font "helvetica-medium-r-12.0"
+fgColor index 15
+bgColor index 14
+limitsFromDb
+nullColor index 13
+smartRefresh
+changeValOnLoseFocus
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 188
+y 280
+w 72
+h 20
+controlPv "$(P):SCANPV1:NSTEPS"
+font "helvetica-medium-r-12.0"
+fgColor index 15
+bgColor index 14
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 188
+y 328
+w 72
+h 20
+controlPv "$(P):SCANPV1:OFFSET"
+font "helvetica-medium-r-12.0"
+fgColor index 15
+bgColor index 14
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 188
+y 352
+w 72
+h 20
+controlPv "$(P):SCANPV1:SETTLETIME"
+font "helvetica-medium-r-12.0"
+fgColor index 15
+bgColor index 14
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 408
+y 20
+w 172
+h 24
+font "helvetica-bold-r-12.0"
+fgColor index 27
+bgColor index 2
+useDisplayBg
+value {
+  "Enter experiment name here"
+}
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 688
+y 664
+w 80
+h 24
+fgColor index 13
+bgColor index 2
+inconsistentColor index 3
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):DATA:FILEPATH:AUTOSET"
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 692
+y 644
+w 64
+h 20
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Autoset?"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 84
+y 648
+w 596
+h 20
+controlPv "$(P):DATA:FILEPATH"
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 3
+editable
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 512
+y 488
+w 180
+h 24
+fgColor index 13
+bgColor index 2
+inconsistentColor index 3
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):GRABIMAGES:CAPTUREMODE"
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 420
+y 492
+w 84
+h 20
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Capture mode:"
+}
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 468
+y 320
+w 92
+h 24
+fgColor index 13
+bgColor index 2
+inconsistentColor index 3
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):SHUTTER2:ENABLE"
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 340
+y 324
+w 120
+h 20
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Pump shutter enable"
+}
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 468
+y 352
+w 92
+h 24
+fgColor index 13
+bgColor index 2
+inconsistentColor index 3
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):SHUTTER3:ENABLE"
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 340
+y 356
+w 120
+h 20
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Shutter 3 enable"
+}
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 468
+y 288
+w 92
+h 24
+fgColor index 13
+bgColor index 2
+inconsistentColor index 3
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):SHUTTER1:ENABLE"
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 340
+y 292
+w 120
+h 20
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Drive shutter enable"
+}
+endObjectProperties
+

@@ -1,0 +1,138 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 1046
+y 51
+w 872
+h 928
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-12.0"
+btnFont "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 3
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+showGrid
+snapToGrid
+gridSize 4
+disableScroll
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 896
+h 40
+lineColor index 13
+fill
+fillColor index 63
+endObjectProperties
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 4
+y 76
+w 860
+h 848
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+displaySource "menu"
+filePv "LOC\\$(!W)show=e:0,2-D Scan,DAE,WDM"
+center
+setSize
+sizeOfs 5
+numDsps 5
+displayFileName {
+  0 "pvScan-ued-2pv.edl"
+  1 "pvScan-ued-dae.edl"
+  2 "pvScan-ued-wdm.edl"
+  3 "pvScan-ued-1motor.edl"
+  4 "pvScan-ued-1pv.edl"
+}
+symbols {
+  0 "P=ASTA:PV04,IOC=sioc-asta-pv04"
+  1 "P=ASTA:PV02,IOC=sioc-asta-pv02"
+  2 "P=ASTA:PV05,IOC=sioc-asta-pv05"
+  3 "P=ASTA:PV01,IOC=sioc-asta-pv01"
+  4 "P=ASTA:PV03,IOC=sioc-asta-pv03"
+}
+noScroll
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 8
+y 52
+w 584
+h 24
+fgColor index 13
+bgColor index 6
+selectColor index 2
+inconsistentColor index 6
+topShadowColor index 6
+botShadowColor index 14
+controlPv "LOC\\$(!W)show"
+font "helvetica-bold-r-12.0"
+orientation "horizontal"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 16
+y 12
+w 304
+h 24
+font "helvetica-bold-r-18.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "ASTA UED DAQ"
+}
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 808
+y 4
+w 56
+h 32
+fgColor index 55
+bgColor index 47
+topShadowColor index 1
+botShadowColor index 13
+label "EXIT"
+font "courier-bold-r-14.0"
+3d
+endObjectProperties
+
