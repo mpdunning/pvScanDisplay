@@ -3,10 +3,10 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 921
-y 68
-w 600
-h 456
+x 476
+y 51
+w 420
+h 280
 font "helvetica-medium-r-12.0"
 ctlFont "helvetica-medium-r-12.0"
 btnFont "helvetica-medium-r-12.0"
@@ -31,24 +31,9 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 12
-y 124
-w 580
-h 144
-lineColor index 13
-fillColor index 2
-lineWidth 2
-endObjectProperties
-
-# (Rectangle)
-object activeRectangleClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x -4
+x -8
 y 0
-w 612
+w 452
 h 40
 lineColor index 13
 fill
@@ -70,7 +55,7 @@ fgColor index 13
 bgColor index 2
 useDisplayBg
 value {
-  "Random scan"
+  "PV with RBV"
 }
 endObjectProperties
 
@@ -80,7 +65,7 @@ beginObjectProperties
 major 4
 minor 1
 release 0
-x 532
+x 352
 y 4
 w 64
 h 32
@@ -156,6 +141,77 @@ value {
   "Counter action:"
 }
 autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 176
+y 476
+w 132
+h 20
+controlPv "$(P):VAL01"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+precision 3
+nullColor index 13
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "monitors"
+id "3"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 56
+y 476
+w 47
+h 20
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Test val:"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 112
+y 476
+w 52
+h 20
+controlPv "$(P):VAL01"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+editable
+motifWidget
+precision 3
+nullColor index 13
+smartRefresh
+changeValOnLoseFocus
+useHexPrefix
+newPos
+objType "controls"
 endObjectProperties
 
 # (Text Monitor)
@@ -281,47 +337,46 @@ value {
 autoSize
 endObjectProperties
 
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 16
-y 196
-w 76
-h 20
-font "helvetica-medium-r-12.0"
-fontAlign "right"
-fgColor index 13
-bgColor index 2
-useDisplayBg
-value {
-  "Values [egu]:"
-}
-endObjectProperties
-
 # (Text Control)
 object activeXTextDspClass
 beginObjectProperties
 major 4
 minor 7
 release 0
-x 100
-y 196
-w 476
+x 120
+y 92
+w 288
 h 20
-controlPv "$(P):SCANPV1:RAND_VALS"
+controlPv "$(P):SCANPV$(N):RBVNAME"
 font "helvetica-medium-r-12.0"
-fgColor index 13
-bgColor index 2
+fgColor index 27
+bgColor index 3
 editable
-motifWidget
 limitsFromDb
 nullColor index 13
 useHexPrefix
 newPos
 objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 8
+y 92
+w 104
+h 20
+font "helvetica-bold-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Scan PV $(N) RBV:"
+}
 endObjectProperties
 
 # (Text Control)
@@ -330,189 +385,11 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 100
-y 220
-w 476
-h 20
-controlPv "$(P):SCANPV1:RAND_VALS"
-font "helvetica-medium-r-12.0"
-fgColor index 15
-bgColor index 14
-limitsFromDb
-nullColor index 13
-useHexPrefix
-newPos
-objType "controls"
-endObjectProperties
-
-# (Menu Button)
-object activeMenuButtonClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 100
-y 152
-w 156
-h 24
-fgColor index 13
-bgColor index 2
-inconsistentColor index 3
-topShadowColor index 1
-botShadowColor index 13
-controlPv "$(P):SCANPV1:RANDSCAN"
-font "helvetica-medium-r-12.0"
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 32
-y 156
-w 60
-h 20
-font "helvetica-medium-r-12.0"
-fontAlign "right"
-fgColor index 13
-bgColor index 2
-useDisplayBg
-value {
-  "Enable:"
-}
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 24
+x 120
 y 116
-w 76
+w 288
 h 20
-font "helvetica-medium-r-12.0"
-fontAlign "center"
-fgColor index 13
-bgColor index 2
-value {
-  "Scan PV 1"
-}
-endObjectProperties
-
-# (Rectangle)
-object activeRectangleClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 100
-y 152
-w 156
-h 24
-lineColor index 17
-fillColor index 2
-lineWidth 2
-visPv "$(P):SCANPV1:RANDSCAN"
-visMin "1"
-visMax "2"
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 24
-y 48
-w 560
-h 56
-font "helvetica-medium-r-12.0"
-fontAlign "center"
-fgColor index 13
-bgColor index 2
-useDisplayBg
-value {
-  "If enabled, [Start, Stop, N steps] on main panel are ignored, "
-  "and the list of values below are scanned in random order."
-  "Accepts single values delimited by comma, semicolon, or whitespace, "
-  "or Matlab-style ranges [Start:Step:Stop]."
-}
-endObjectProperties
-
-# (Rectangle)
-object activeRectangleClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 12
-y 296
-w 580
-h 144
-lineColor index 13
-fillColor index 2
-lineWidth 2
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 16
-y 368
-w 76
-h 20
-font "helvetica-medium-r-12.0"
-fontAlign "right"
-fgColor index 13
-bgColor index 2
-useDisplayBg
-value {
-  "Values [egu]:"
-}
-endObjectProperties
-
-# (Text Control)
-object activeXTextDspClass
-beginObjectProperties
-major 4
-minor 7
-release 0
-x 100
-y 368
-w 476
-h 20
-controlPv "$(P):SCANPV2:RAND_VALS"
-font "helvetica-medium-r-12.0"
-fgColor index 13
-bgColor index 2
-editable
-motifWidget
-limitsFromDb
-nullColor index 13
-useHexPrefix
-newPos
-objType "controls"
-endObjectProperties
-
-# (Text Control)
-object activeXTextDspClass
-beginObjectProperties
-major 4
-minor 7
-release 0
-x 100
-y 392
-w 476
-h 20
-controlPv "$(P):SCANPV2:RAND_VALS"
+controlPv "$(P):SCANPV$(N):RBVNAME"
 font "helvetica-medium-r-12.0"
 fgColor index 15
 bgColor index 14
@@ -523,43 +400,26 @@ newPos
 objType "controls"
 endObjectProperties
 
-# (Menu Button)
-object activeMenuButtonClass
+# (Text Control)
+object activeXTextDspClass
 beginObjectProperties
 major 4
-minor 0
+minor 7
 release 0
-x 100
-y 324
-w 156
-h 24
-fgColor index 13
-bgColor index 2
-inconsistentColor index 3
-topShadowColor index 1
-botShadowColor index 13
-controlPv "$(P):SCANPV2:RANDSCAN"
-font "helvetica-medium-r-12.0"
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 32
-y 328
-w 60
+x 120
+y 180
+w 288
 h 20
+controlPv "$(P):SCANPV$(N):DELTA"
 font "helvetica-medium-r-12.0"
-fontAlign "right"
-fgColor index 13
-bgColor index 2
-useDisplayBg
-value {
-  "Enable:"
-}
+fgColor index 27
+bgColor index 3
+editable
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
 endObjectProperties
 
 # (Static Text)
@@ -569,33 +429,98 @@ major 4
 minor 1
 release 1
 x 24
-y 288
-w 76
+y 180
+w 88
+h 20
+font "helvetica-bold-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Delta:"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 120
+y 204
+w 288
+h 20
+controlPv "$(P):SCANPV$(N):DELTA"
+font "helvetica-medium-r-12.0"
+fgColor index 15
+bgColor index 14
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 80
+y 228
+w 328
+h 32
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Scan waits until (RBV - Setpoint <= Delta) to proceed."
+  "Set to 0 to use default."
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 120
+y 140
+w 248
 h 20
 font "helvetica-medium-r-12.0"
 fontAlign "center"
 fgColor index 13
 bgColor index 2
+useDisplayBg
 value {
-  "Scan PV 2"
+  "Only valid if \"PV with RBV\" is selected."
 }
 endObjectProperties
 
-# (Rectangle)
-object activeRectangleClass
+# (Static Text)
+object activeXTextClass
 beginObjectProperties
 major 4
-minor 0
-release 0
-x 100
-y 324
-w 156
-h 24
-lineColor index 17
-fillColor index 2
-lineWidth 2
-visPv "$(P):SCANPV2:RANDSCAN"
-visMin "1"
-visMax "2"
+minor 1
+release 1
+x 8
+y 48
+w 388
+h 28
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Use for PVs with readback that don't exist in the PV type menu."
+}
 endObjectProperties
 

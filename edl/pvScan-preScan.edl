@@ -3,10 +3,10 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 467
-y 61
-w 280
-h 220
+x 471
+y 113
+w 300
+h 260
 font "helvetica-medium-r-12.0"
 ctlFont "helvetica-medium-r-12.0"
 btnFont "helvetica-medium-r-12.0"
@@ -24,24 +24,6 @@ snapToGrid
 gridSize 4
 disableScroll
 endScreenProperties
-
-# (Rectangle)
-object activeRectangleClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 100
-y 60
-w 156
-h 24
-lineColor index 20
-fillColor index 2
-lineWidth 4
-visPv "$(P):SCAN:PRESCAN"
-visMin "1"
-visMax "2"
-endObjectProperties
 
 # (Rectangle)
 object activeRectangleClass
@@ -83,7 +65,7 @@ beginObjectProperties
 major 4
 minor 1
 release 0
-x 188
+x 232
 y 4
 w 64
 h 32
@@ -94,31 +76,6 @@ botShadowColor index 13
 label "EXIT"
 font "courier-bold-r-18.0"
 3d
-endObjectProperties
-
-# (Text Monitor)
-object activeXTextDspClass:noedit
-beginObjectProperties
-major 4
-minor 7
-release 0
-x 108
-y 564
-w 56
-h 14
-controlPv "ESB:BO:2114-7:BIT1.RVAL"
-font "helvetica-medium-r-12.0"
-fgColor index 13
-bgColor index 2
-useDisplayBg
-autoHeight
-limitsFromDb
-nullColor index 13
-smartRefresh
-fastUpdate
-useHexPrefix
-newPos
-objType "monitors"
 endObjectProperties
 
 # (Static Text)
@@ -184,30 +141,6 @@ value {
   "Counter action:"
 }
 autoSize
-endObjectProperties
-
-# (Message Button)
-object activeMessageButtonClass
-beginObjectProperties
-major 4
-minor 1
-release 0
-x 172
-y 560
-w 60
-h 24
-fgColor index 13
-onColor index 2
-offColor index 2
-topShadowColor index 1
-botShadowColor index 13
-controlPv "ESB:BO:SC:2114-7:BIT1.RVAL"
-pressValue "1"
-releaseValue "0"
-onLabel "FIRE"
-offLabel "FIRE"
-3d
-font "helvetica-medium-r-12.0"
 endObjectProperties
 
 # (Text Monitor)
@@ -410,8 +343,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 32
-y 104
+x 56
+y 144
 w 60
 h 20
 font "helvetica-medium-r-12.0"
@@ -430,8 +363,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 100
-y 104
+x 124
+y 144
 w 72
 h 20
 controlPv "$(P):SCANPV1:PRE_START"
@@ -454,8 +387,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 32
-y 128
+x 56
+y 168
 w 60
 h 20
 font "helvetica-medium-r-12.0"
@@ -474,8 +407,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 100
-y 128
+x 124
+y 168
 w 72
 h 20
 controlPv "$(P):SCANPV1:PRE_STOP"
@@ -498,8 +431,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 32
-y 176
+x 56
+y 216
 w 60
 h 20
 font "helvetica-medium-r-12.0"
@@ -518,8 +451,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 100
-y 176
+x 124
+y 216
 w 72
 h 20
 controlPv "$(P):SCANPV1:PRE_INC"
@@ -543,8 +476,8 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 32
-y 152
+x 56
+y 192
 w 60
 h 20
 font "helvetica-medium-r-12.0"
@@ -563,8 +496,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 100
-y 152
+x 124
+y 192
 w 72
 h 20
 controlPv "$(P):SCANPV1:PRE_NSTEPS"
@@ -587,8 +520,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 184
-y 104
+x 208
+y 144
 w 72
 h 20
 controlPv "$(P):SCANPV1:PRE_START"
@@ -608,8 +541,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 184
-y 128
+x 208
+y 168
 w 72
 h 20
 controlPv "$(P):SCANPV1:PRE_STOP"
@@ -629,8 +562,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 184
-y 176
+x 208
+y 216
 w 72
 h 20
 controlPv "$(P):SCANPV1:PRE_INC"
@@ -653,8 +586,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 184
-y 152
+x 208
+y 192
 w 72
 h 20
 controlPv "$(P):SCANPV1:PRE_NSTEPS"
@@ -674,8 +607,8 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 100
-y 60
+x 124
+y 100
 w 156
 h 24
 fgColor index 13
@@ -693,17 +626,56 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 32
-y 64
-w 60
-h 20
+x 16
+y 100
+w 100
+h 24
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 13
 bgColor index 2
 useDisplayBg
 value {
-  "Enable:"
+  "Enable/Disable:"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 124
+y 100
+w 156
+h 24
+lineColor index 17
+fillColor index 2
+lineWidth 2
+visPv "$(P):SCAN:PRESCAN"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 12
+y 48
+w 264
+h 28
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Does a scan with Scan PV #1 "
+  "before the main scan."
 }
 endObjectProperties
 

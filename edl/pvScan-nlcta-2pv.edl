@@ -3,8 +3,8 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 895
-y 336
+x 905
+y 216
 w 860
 h 860
 font "helvetica-medium-r-12.0"
@@ -38,38 +38,6 @@ h 316
 lineColor index 13
 fillColor index 1
 lineWidth 2
-endObjectProperties
-
-# (Rectangle)
-object activeRectangleClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 624
-y 188
-w 228
-h 88
-lineColor index 13
-fillColor index 1
-endObjectProperties
-
-# (Rectangle)
-object activeRectangleClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 748
-y 204
-w 92
-h 24
-lineColor index 45
-fillColor index 2
-lineWidth 3
-visPv "$(P):GRABIMAGES:SEQ2ENABLE"
-visMin "1"
-visMax "2"
 endObjectProperties
 
 # (Rectangle)
@@ -1443,7 +1411,7 @@ minor 0
 release 0
 x 88
 y 116
-w 216
+w 180
 h 24
 fgColor index 27
 bgColor index 2
@@ -2049,7 +2017,7 @@ minor 0
 release 0
 x 396
 y 116
-w 216
+w 180
 h 24
 fgColor index 27
 bgColor index 2
@@ -2155,7 +2123,7 @@ major 4
 minor 0
 release 0
 x 708
-y 80
+y 84
 w 132
 h 24
 fgColor index 13
@@ -2174,7 +2142,7 @@ major 4
 minor 1
 release 1
 x 632
-y 84
+y 88
 w 68
 h 20
 font "helvetica-medium-r-12.0"
@@ -2184,25 +2152,6 @@ bgColor index 2
 useDisplayBg
 value {
   "Scan mode:"
-}
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 632
-y 180
-w 160
-h 16
-font "helvetica-bold-r-12.0"
-fontAlign "center"
-fgColor index 13
-bgColor index 2
-value {
-  "Pumped image sequence"
 }
 endObjectProperties
 
@@ -2898,147 +2847,6 @@ value {
 }
 endObjectProperties
 
-# (Menu Button)
-object activeMenuButtonClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 748
-y 204
-w 92
-h 24
-fgColor index 13
-bgColor index 2
-inconsistentColor index 3
-topShadowColor index 1
-botShadowColor index 13
-controlPv "$(P):GRABIMAGES:SEQ2ENABLE"
-font "helvetica-medium-r-12.0"
-endObjectProperties
-
-# (Group)
-object activeGroupClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 624
-y 236
-w 120
-h 20
-
-beginGroup
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 624
-y 236
-w 64
-h 20
-font "helvetica-medium-r-12.0"
-fontAlign "right"
-fgColor index 13
-bgColor index 2
-useDisplayBg
-value {
-  "N images:"
-}
-endObjectProperties
-
-# (Text Control)
-object activeXTextDspClass
-beginObjectProperties
-major 4
-minor 7
-release 0
-x 692
-y 236
-w 52
-h 20
-controlPv "$(P):GRABIMAGES:N2"
-font "helvetica-medium-r-12.0"
-fgColor index 13
-bgColor index 2
-useDisplayBg
-editable
-motifWidget
-limitsFromDb
-nullColor index 13
-useHexPrefix
-newPos
-objType "controls"
-endObjectProperties
-
-endGroup
-
-endObjectProperties
-
-# (Group)
-object activeGroupClass
-beginObjectProperties
-major 4
-minor 0
-release 0
-x 724
-y 236
-w 120
-h 20
-
-beginGroup
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 724
-y 236
-w 64
-h 20
-font "helvetica-medium-r-12.0"
-fontAlign "right"
-fgColor index 13
-bgColor index 2
-useDisplayBg
-value {
-  "Delay:"
-}
-endObjectProperties
-
-# (Text Control)
-object activeXTextDspClass
-beginObjectProperties
-major 4
-minor 7
-release 0
-x 792
-y 236
-w 52
-h 20
-controlPv "$(P):GRABIMAGES:SEQ2DELAY"
-font "helvetica-medium-r-12.0"
-fgColor index 13
-bgColor index 2
-useDisplayBg
-editable
-motifWidget
-limitsFromDb
-nullColor index 13
-useHexPrefix
-newPos
-objType "controls"
-endObjectProperties
-
-endGroup
-
-endObjectProperties
-
 # (Related Display)
 object relatedDisplayClass
 beginObjectProperties
@@ -3065,26 +2873,6 @@ symbols {
 }
 replaceSymbols {
   0 1
-}
-endObjectProperties
-
-# (Static Text)
-object activeXTextClass
-beginObjectProperties
-major 4
-minor 1
-release 1
-x 644
-y 208
-w 96
-h 20
-font "helvetica-medium-r-12.0"
-fontAlign "right"
-fgColor index 13
-bgColor index 2
-useDisplayBg
-value {
-  "Enable/Disable:"
 }
 endObjectProperties
 
@@ -3158,7 +2946,7 @@ major 4
 minor 1
 release 1
 x 636
-y 112
+y 120
 w 64
 h 20
 font "helvetica-medium-r-12.0"
@@ -3178,7 +2966,7 @@ major 4
 minor 7
 release 0
 x 708
-y 112
+y 120
 w 64
 h 20
 controlPv "$(P):NRUNS"
@@ -3247,15 +3035,314 @@ beginObjectProperties
 major 4
 minor 4
 release 0
-x 636
-y 144
-w 92
-h 20
+x 272
+y 116
+w 32
+h 24
 fgColor index 13
 bgColor index 2
 topShadowColor index 1
 botShadowColor index 13
 font "helvetica-medium-r-10.0"
+buttonLabel "RBV"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "pvScan-rbv.edl"
+}
+symbols {
+  0 "N=1"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 580
+y 116
+w 32
+h 24
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-medium-r-10.0"
+buttonLabel "RBV"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "pvScan-rbv.edl"
+}
+symbols {
+  0 "N=2"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 272
+y 116
+w 32
+h 24
+lineColor index 17
+fillColor index 2
+lineWidth 2
+visPv "$(P):SCANPV1:PVTYPE"
+visMin "6"
+visMax "7"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 580
+y 116
+w 32
+h 24
+lineColor index 17
+fillColor index 2
+lineWidth 2
+visPv "$(P):SCANPV2:PVTYPE"
+visMin "6"
+visMax "7"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 68
+y 432
+w 80
+h 24
+lineColor index 17
+fillColor index 2
+lineWidth 2
+visPv "$(P):DATA:ENABLE"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 68
+y 468
+w 80
+h 24
+lineColor index 17
+fillColor index 2
+lineWidth 2
+visPv "$(P):LOG:ENABLE"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 452
+y 432
+w 92
+h 24
+lineColor index 17
+fillColor index 2
+lineWidth 2
+visPv "$(P):GRABIMAGES:ENABLE"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 608
+y 504
+w 100
+h 24
+lineColor index 17
+fillColor index 2
+lineWidth 2
+visPv "$(P):GRABIMAGES:TIFFTS"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 608
+y 540
+w 100
+h 24
+lineColor index 17
+fillColor index 2
+lineWidth 2
+visPv "$(P):GRABIMAGES:STEPNUMBER"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 80
+y 504
+w 68
+h 24
+lineColor index 17
+fillColor index 2
+lineWidth 2
+visPv "$(P):DATA:PLOTTIMES"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 212
+y 504
+w 68
+h 24
+lineColor index 17
+fillColor index 2
+lineWidth 2
+visPv "$(P):DATA:FORMAT"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 748
+y 288
+w 92
+h 24
+lineColor index 17
+fillColor index 2
+lineWidth 2
+visPv "$(P):SHUTTER1:ENABLE"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 748
+y 320
+w 92
+h 24
+lineColor index 17
+fillColor index 2
+lineWidth 2
+visPv "$(P):SHUTTER2:ENABLE"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 748
+y 352
+w 92
+h 24
+lineColor index 17
+fillColor index 2
+lineWidth 2
+visPv "$(P):SHUTTER3:ENABLE"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 768
+y 676
+w 80
+h 24
+lineColor index 17
+fillColor index 2
+lineWidth 2
+visPv "$(P):DATA:FILEPATH:AUTOSET"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 664
+y 156
+w 148
+h 24
+
+beginGroup
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 664
+y 156
+w 148
+h 24
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-medium-r-12.0"
 buttonLabel "Pre-scan"
 numPvs 4
 numDsps 1
@@ -3270,11 +3357,11 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 636
-y 144
-w 92
-h 20
-lineColor index 20
+x 664
+y 156
+w 148
+h 24
+lineColor index 17
 fillColor index 2
 lineWidth 2
 visPv "$(P):SCAN:PRESCAN"
@@ -3282,21 +3369,38 @@ visMin "1"
 visMax "2"
 endObjectProperties
 
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 664
+y 192
+w 148
+h 24
+
+beginGroup
+
 # (Related Display)
 object relatedDisplayClass
 beginObjectProperties
 major 4
 minor 4
 release 0
-x 748
-y 144
-w 92
-h 20
+x 664
+y 192
+w 148
+h 24
 fgColor index 13
 bgColor index 2
 topShadowColor index 1
 botShadowColor index 13
-font "helvetica-medium-r-10.0"
+font "helvetica-medium-r-12.0"
 buttonLabel "Random scan"
 numPvs 4
 numDsps 1
@@ -3311,15 +3415,77 @@ beginObjectProperties
 major 4
 minor 0
 release 0
-x 748
-y 144
-w 92
-h 20
-lineColor index 20
+x 664
+y 192
+w 148
+h 24
+lineColor index 17
 fillColor index 2
 lineWidth 2
-visPv "$(P):SCANPV1:RANDSCAN"
+visPv "CALC\\\{A+B\}($(P):SCANPV1:RANDSCAN,$(P):SCANPV2:RANDSCAN)"
+visMin "1"
+visMax "3"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 664
+y 228
+w 148
+h 24
+
+beginGroup
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 664
+y 228
+w 148
+h 24
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-medium-r-12.0"
+buttonLabel "Pumped Sequence"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "pvScan-pumpedSeq.edl"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 664
+y 228
+w 148
+h 24
+lineColor index 17
+fillColor index 2
+lineWidth 2
+visPv "$(P):GRABIMAGES:SEQ2ENABLE"
 visMin "1"
 visMax "2"
+endObjectProperties
+
+endGroup
+
 endObjectProperties
 
